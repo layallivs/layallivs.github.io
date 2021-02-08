@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="tailwind.css" rel="stylesheet">
+	<title>Layal Liverpool</title>
+	<!---
+	You may need jQuery
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	--->
+	<style>
+      header {
+        background:url('images/LayalLiverpool3.jpg');}
+	</style>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-black bg-opacity-50">
+
+		<div class="p-4">
+			<div class="font-extrabold tracking-widest text-xl"><a href="#" class="transition duration-500 hover:text-indigo-500">Layal Liverpool</a></div>
+		</div>
+
+		<!-- Nav Items Working on Tablet & Bigger Sceen -->
+		<div class="p-4 hidden md:flex flex-row justify-between font-bold">
+			<a id="hide-after-click" href="#" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Home</a>
+			<a href="#journalism" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Journalism</a>
+      <a href="#media" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Media</a>
+			<a href="#contact" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Contact</a>
+		</div>
+
+		<!-- Burger Nav Button on Mobile -->
+		<div id="nav-open" class="p-4 md:hidden">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+			 stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+				<line x1="3" y1="12" x2="21" y2="12"></line>
+				<line x1="3" y1="6" x2="21" y2="6"></line>
+				<line x1="3" y1="18" x2="21" y2="18"></line>
+			</svg>
+		</div>
+	</nav>
+
+	<!-- Opened Nav in Mobile, you can use javascript/jQuery -->
+	<div id="nav-opened" class="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10">
+		<div class="p-2 flex flex-col">
+      <a href="#" class="p-2 font-semibold hover:text-indigo-700">Home</a>
+			<a href="#journalism" class="p-2 font-semibold hover:text-indigo-700">Journalism</a>
+			<a href="#media" class="p-2 font-semibold hover:text-indigo-700">Media</a>
+			<a href="#contact" class="p-2 font-semibold hover:text-indigo-700">Contact</a>
+		</div>
+	</div>
+
+  <style>
+      .active{
+          display: block;
+      }
+  </style>
+
+  <script>
+      let hamburger = document.getElementById('nav-open');
+
+      let mobileMenu = document.getElementById('nav-opened');
+
+      hamburger.addEventListener('click', function(){
+          mobileMenu.classList.toggle('active');
+      });
+  </script>
+
+	<header id="up" class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+		<!-- Overlay Background + Center Control -->
+		<div class="h-screen bg-opacity-50 bg-black flex items-center justify-center" style="background:rgba(0,0,0,0.5);">
+			<div class="mx-2 text-center">
+        <div class="py-5">
+				<h1 class="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl">
+					<span class="">Layal</span> Liverpool
+        </h1>
+        </div>
+           <h2 class="text-gray-400 font-extrabold text-3xl xs:text-4xl md:text-5xl leading-tight">
+           <span class="">Science journalist</span>
+           </h2>
+        </div>
+    </div>
+    </header>
+
+  <!-- About -->
+  <div class="py-20">
+    <div class="py-8 px-8 w-1/2 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+      <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="images/LayalLiverpool3_crop.jpg" alt="Woman's Face">
+      <div class="text-center space-y-2 sm:text-left">
+        <div class="space-y-0.5">
+          <p class="text-lg text-black font-semibold">
+            About me
+          </p>
+          <p class="text-gray-500 font-medium">
+            I am a science journalist with expertise in biomedical science, particularly virology and immunology. I write news, features and opinion articles about the latest scientific research, from technology and space, to health and the environment. My writing has appeared in New Scientist, Wired and the Guardian. Currently, I am a Trainee Digital Journalist at New Scientist, based in Berlin, Germany.
+            <br/><br/>
+            Before moving into journalism, I worked as a scientific researcher at University College London and the University of Oxford in the UK. My PhD research focused on investigating how invading viruses are detected by the body’s immune system.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Articles -->
+  <section id="journalism"class="container mx-auto px-6 p-10">
+  <h2 class="text-5xl font-bold text-center text-gray-800 mb-8">
+    Selected articles
+  </h2>
+  <h3 class="text-xl text-center text-gray-800 mb-8">
+    You can find all my latest articles by visiting my
+    <a class="text-decoration: underline" href=https://www.newscientist.com/author/layal-liverpool/>New Scientist</a>
+    author page.
+  </h3>
+  </section>
+    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+    	<div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="https://www.newscientist.com/article/mg24933180-800-genomic-medicine-is-deeply-biased-towards-white-people">
+    		<img src="https://images.newscientist.com/wp-content/uploads/2021/01/20134934/missing-sequences_helix.jpg">
+        </a>
+        <div class="text-center m-1 px-3 py-2">Genomic medicine is deeply biased towards white people</div>
+    		<div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+    	</div>
+      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="https://www.newscientist.com/article/2266017-nhs-england-criticised-over-missing-ethnicity-data-for-covid-19-jabs">
+        <img src="https://images.newscientist.com/wp-content/uploads/2021/01/27135840/27-jan_missing-vaccine.jpg">
+        </a>
+        <div class="text-center m-1 px-3 py-2">NHS England criticised over missing ethnicity data for covid-19 jabs</div>
+        <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="https://www.newscientist.com/article/2237259-why-dont-children-seem-to-get-very-ill-from-the-coronavirus">
+        <img src="https://images.newscientist.com/wp-content/uploads/2020/03/12144831/f39kgx_web.jpg">
+        </a>
+        <div class="text-center m-1 px-3 py-2">Why don't children seem to get very ill from the coronavirus?</div>
+        <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="https://www.wired.co.uk/article/bame-communities-coronavirus-uk">
+        <img src="https://wi-images.condecdn.net/image/9ZX8mMVE5AM/crop/1440/landscape/f/wired-bame-coronavirus.jpg">
+        </a>
+        <div class="text-center m-1 px-3 py-2">Why coronavirus hit people from BAME communities so hard</div>
+        <div class="text-center font-bold text-xl m-1 px-2 py-2">Wired</div>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="https://www.newscientist.com/article/2258845-covid-19-is-germany-losing-the-fight-against-the-second-wave">
+        <img src="https://images.newscientist.com/wp-content/uploads/2020/11/03165805/shutterstock_editorial_10991612b_web.jpg">
+        </a>
+        <div class="text-center m-1 px-3 py-2">Covid-19: Is Germany losing the fight against the second wave?</div>
+        <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="https://www.newscientist.com/article/2265004-we-must-start-publishing-ethnicity-data-for-covid-19-vaccinations">
+        <img src="https://images.newscientist.com/wp-content/uploads/2021/01/15171952/final-web.png">
+        </a>
+        <div class="text-center m-1 px-3 py-2">We must start publishing ethnicity data for covid-19 vaccinations</div>
+        <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="https://www.theguardian.com/science/blog/2018/sep/13/could-cold-water-swimming-help-treat-depression">
+        <img src="https://i.guim.co.uk/img/media/7021145c180827e76e4fa3a5142c1a57ee011ddf/0_170_5115_3069/master/5115.jpg?width=620&quality=85&auto=format&fit=max&s=f81a4e763c65b05b067c0c5811e764ea">
+        </a>
+        <div class="text-center m-1 px-3 py-2"><br/>Could cold water swimming help treat depression?</div>
+        <div class="text-center font-bold text-xl m-1 px-2 py-2">Guardian</div>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="https://www.newscientist.com/article/mg24833093-900-systemic-racism-what-research-reveals-about-the-extent-of-its-impact">
+        <img src="https://images.newscientist.com/wp-content/uploads/2020/11/18172456/systemicracismart.jpg">
+        </a>
+        <div class="text-center m-1 px-3 py-2">Systemic racism: What research reveals about the extent of its impact </div>
+        <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+      </div>
+    </div>
+
+    <!-- Media -->
+    <section id="media"class="container mx-auto px-6 p-10">
+    <h2 class="text-5xl font-bold text-center text-gray-800 mb-2">
+      Media appearances
+    </h2>
+    </section>
+    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+    	<div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
+        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
+        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
+          <a href=https://www.newscientist.com/podcasts/51-covid-evolution-new-dinosaur-missing-genome-data>#51: Covid evolution; new dinosaur; missing genome data - 22 January 2021</a>
+        </div>
+        <p class="text-center text-xl m-1 px-3 py-2 text-gray-500">
+          On the pod this week are Rowan Hooper, Tiffany O’Callaghan, Layal Liverpool and Graham Lawton. Layal Liverpool talks about the massive data gap in the world's DNA databases and efforts to close it.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
+        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
+        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
+          <a href=https://www.newscientist.com/podcasts/48-must-know-science-of-2021/>#48: Must-know science of 2021 - 1 January 2021</a>
+        </div>
+        <p class="text-center text-xl m-1 px-3 py-2 text-gray-500">
+          This New Years special episode previews some of the biggest science stories to keep an eye on during 2021. On the panel are Rowan Hooper, Cat de Lange, Layal Liverpool, Adam Vaughan, Leah Crane and Chelsea Whyte. Layal Liverpool talks about the growing problem of microplastics and what we can expect to learn about their impact on health.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
+        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
+        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
+          <a href=https://www.newscientist.com/podcasts/47-christmas-special-quiz-of-the-year/>#47: Christmas special quiz of the year - 18 December 2020</a>
+        </div>
+        <p class="text-center text-xl m-1 px-3 py-2 text-gray-500">
+          2020 was unconventional to say the least, and this Christmas special is full of much needed hope, optimism and laughter. The team brings you highlights from New Scientist’s live holiday event which you can watch in full here. On the panel are Rowan Hooper, Layal Liverpool, Graham Lawton, Penny Sarchet and Sam Wong.
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact"class="container mx-auto px-6 p-10">
+    <h2 class="text-5xl font-bold text-center text-gray-800 mb-2">
+      Contact
+    </h2>
+    </section>
+    <div class="py-8 px-8 sm:w-4/5 md:w-4/5 lg:w-1/3 xl:w-1/3 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+      <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="images/LayalLiverpool3_crop.jpg" alt="Woman's Face">
+      <div class="text-center space-y-2 sm:text-left">
+        <div class="space-y-0.5">
+          <p class="py-2 text-lg text-black font-semibold">
+            Dr. Layal Liverpool
+          </p>
+          <p class="py-2 text-gray-700 font-medium">
+            Got a tip or an exclusive?
+            <br/>
+            Get in touch!
+          </p>
+        </div>
+        <div class="flex my-2 py-2">
+        <a href=mailto:layal@layalliverpool.com>
+          <i style="background-color:#dd4b39"  class="flex items-center justify-center h-12 w-12 mx-1 rounded-full fas fill-current text-white text-xl fa-envelope"></i>
+        </a>
+        <a href=https://twitter.com/layallivs>
+          <i style="background-color:#55ACEE;" class="flex items-center justify-center h-12 w-12 mx-1 rounded-full fab fill-current text-white text-xl fa-twitter"></i>
+        </a>
+        <a href=https://www.facebook.com/layalliverpool>
+          <i style="background-color: #3B5998;" class="flex items-center justify-center h-12 w-12 mx-1 rounded-full fab fill-current text-white text-xl fa-facebook-f"></i>
+        </a>
+        <a href=http://instagram.com/sciencespedup>
+          <i style="background-color:#833AB4;" class="flex items-center justify-center h-12 w-12 mx-1 rounded-full fab fill-current text-white text-xl fa-instagram"></i>
+        </a>
+        <a href=https://www.linkedin.com/in/layal-liverpool-b01b7367/>
+          <i style="background-color:#125688;" class="flex items-center justify-center h-12 w-12 mx-1 rounded-full fab fill-current text-white text-xl fa-linkedin"></i>
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Impressum -->
+    <div class="py-20"></<div class=""></div>
+    <section id="impressum"class="container mx-auto px-6 p-10">
+    <h2 class="text-xl font-bold text-center text-gray-800 mb-2">
+      Impressum
+    </h2>
+    </section>
+    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+        <div class="text-left text-xs m-1 px-3 py-2 font-small">
+According to § 5 TMG<br/><br/>
+
+Responsible for the content according to § 55 Abs. 2 RStV:<br/>
+Layal Liverpool<br/>
+Stierstraße 1<br/>
+12159 Berlin<br/>
+layal@layalliverpool.com<br/><br/>
+
+Disclaimer:<br/><br/>
+
+Liability for content<br/>
+The contents of our pages were created with great care. However, we cannot guarantee that the content is correct, complete and up to date. As a service provider, we are responsible for our own content on these pages in accordance with Section 7 (1) of the German Telemedia Act. According to §§ 8 to 10 TMG, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information according to general laws remain unaffected. However, liability in this regard is only possible from the time we become aware of a specific legal violation.<br/><br/>
+
+Liability for links<br/>
+Our website contains links to external third-party websites, the content of which we have no influence on. For this reason, we cannot accept any liability for this external content. The respective provider or operator is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time the link was created. No illegal content was discernible at the time the link was created. A permanent control of the content of the linked pages is not reasonable without concrete evidence of an infringement. As soon as we become aware of legal violations, we will remove such links immediately.<br/><br/>
+
+Copyright<br/>
+The content and works on these pages created by the site operator are subject to German copyright law. The duplication, processing, distribution and any kind of use beyond the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this page are only permitted for private, non-commercial use. As far as the content on this page was not created by the operator, the copyrights of third parties are respected. In particular contents of third parties are marked as such. Should you nevertheless become aware of a copyright infringement, please let us know. As soon as we become aware of legal violations, we will remove such content immediately.<br/><br/>
+
+Privacy<br/>
+Our website can generally be used without providing personal data. Insofar as personal data (e.g. name, address or email address) is collected on our website, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.<br/>
+We would like to point out that data transmission over the Internet (e.g. when communicating by email) can have security gaps. It is not possible to completely protect data from third-party access.<br/>
+We hereby expressly object to the use by third parties of contact data published within the scope of the imprint obligation for sending unsolicited advertising and information material. The operators of the pages expressly reserve the right to take legal action in the event of unsolicited sending of advertising information, such as spam e-mails.<br/><br/>
+
+Website imprint from impressum-generator.de (translated from German to English with Google Translate)
+        </div>
+      </div>
+    </div>
+</body>
+</html>
