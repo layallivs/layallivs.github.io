@@ -4230,7 +4230,7 @@ video {
 }
 
 .bg-layal-hero {
-  background-image: url('images/LayalLiverpool3.jpg');
+  background-image: url('./images/LayalLiverpool3.jpg');
 }
 
 .from-transparent {
@@ -34860,7 +34860,7 @@ video {
   }
 
   .sm\:bg-layal-hero {
-    background-image: url('images/LayalLiverpool3.jpg');
+    background-image: url('./images/LayalLiverpool3.jpg');
   }
 
   .sm\:from-transparent {
@@ -65412,7 +65412,7 @@ video {
   }
 
   .md\:bg-layal-hero {
-    background-image: url('images/LayalLiverpool3.jpg');
+    background-image: url('./images/LayalLiverpool3.jpg');
   }
 
   .md\:from-transparent {
@@ -95964,7 +95964,7 @@ video {
   }
 
   .lg\:bg-layal-hero {
-    background-image: url('images/LayalLiverpool3.jpg');
+    background-image: url('./images/LayalLiverpool3.jpg');
   }
 
   .lg\:from-transparent {
@@ -126516,7 +126516,7 @@ video {
   }
 
   .xl\:bg-layal-hero {
-    background-image: url('images/LayalLiverpool3.jpg');
+    background-image: url('./images/LayalLiverpool3.jpg');
   }
 
   .xl\:from-transparent {
@@ -157068,7 +157068,7 @@ video {
   }
 
   .\32xl\:bg-layal-hero {
-    background-image: url('images/LayalLiverpool3.jpg');
+    background-image: url('./images/LayalLiverpool3.jpg');
   }
 
   .\32xl\:from-transparent {
