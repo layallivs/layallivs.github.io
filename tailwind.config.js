@@ -4,7 +4,7 @@ module.exports = {
   theme: {
         extend: {
           backgroundImage: theme => ({
-           'layal-hero': "url('https://layalliverpool.com/images/LayalLiverpool3.jpg')",
+           'layal-hero': "url('./images/LayalLiverpool3.jpg')",
           })
         }
       },
