@@ -1,3 +1,5 @@
+/*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
@@ -440,15 +442,18 @@ textarea {
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
   color: #9ca3af;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
   color: #9ca3af;
 }
 
 input::placeholder,
 textarea::placeholder {
+  opacity: 1;
   color: #9ca3af;
 }
 
@@ -4222,6 +4227,10 @@ video {
 
 .bg-gradient-to-tl {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-layal-hero {
+  background-image: url('images/LayalLiverpool3.jpg');
 }
 
 .from-transparent {
@@ -10780,6 +10789,10 @@ video {
 
 .cursor-move {
   cursor: move;
+}
+
+.cursor-help {
+  cursor: help;
 }
 
 .cursor-not-allowed {
@@ -34846,6 +34859,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:bg-layal-hero {
+    background-image: url('images/LayalLiverpool3.jpg');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -41402,6 +41419,10 @@ video {
 
   .sm\:cursor-move {
     cursor: move;
+  }
+
+  .sm\:cursor-help {
+    cursor: help;
   }
 
   .sm\:cursor-not-allowed {
@@ -65390,6 +65411,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .md\:bg-layal-hero {
+    background-image: url('images/LayalLiverpool3.jpg');
+  }
+
   .md\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -71946,6 +71971,10 @@ video {
 
   .md\:cursor-move {
     cursor: move;
+  }
+
+  .md\:cursor-help {
+    cursor: help;
   }
 
   .md\:cursor-not-allowed {
@@ -95934,6 +95963,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-layal-hero {
+    background-image: url('images/LayalLiverpool3.jpg');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -102490,6 +102523,10 @@ video {
 
   .lg\:cursor-move {
     cursor: move;
+  }
+
+  .lg\:cursor-help {
+    cursor: help;
   }
 
   .lg\:cursor-not-allowed {
@@ -126478,6 +126515,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-layal-hero {
+    background-image: url('images/LayalLiverpool3.jpg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -133034,6 +133075,10 @@ video {
 
   .xl\:cursor-move {
     cursor: move;
+  }
+
+  .xl\:cursor-help {
+    cursor: help;
   }
 
   .xl\:cursor-not-allowed {
@@ -157022,6 +157067,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .\32xl\:bg-layal-hero {
+    background-image: url('images/LayalLiverpool3.jpg');
+  }
+
   .\32xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -163578,6 +163627,10 @@ video {
 
   .\32xl\:cursor-move {
     cursor: move;
+  }
+
+  .\32xl\:cursor-help {
+    cursor: help;
   }
 
   .\32xl\:cursor-not-allowed {
