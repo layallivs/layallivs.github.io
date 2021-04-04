@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Layal Liverpool Science Journalist" />
+  <meta property="og:description" content="I am a science journalist with expertise in biomedical science, particularly virology and immunology." />
+  <meta property="og:image" content="https://layalliverpool.com/images/ogImageLayalLiverpool.jpg" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Layal Liverpool Science Journalist" />
+  <meta property="twitter:description" content="I am a science journalist with expertise in biomedical science, particularly virology and immunology." />
+  <meta property="twitter:image" content="https://layalliverpool.com/images/ogImageLayalLiverpool.jpg" />
+  <meta property="twitter:site" content="https://twitter.com/layallivs" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="tailwind.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://layalliverpool.com/images/favicon.ico">
   <title>Layal Liverpool</title>
 </head>
 
@@ -19,7 +28,8 @@
 		<!-- Nav Items Working on Tablet & Bigger Sceen -->
 		<div class="p-4 hidden md:flex flex-row justify-between font-bold">
 			<a id="hide-after-click" href="#" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Home</a>
-			<a href="#journalism" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Journalism</a>
+			<a href="#about" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">About</a>
+      <a href="#journalism" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Journalism</a>
       <a href="#media" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Media</a>
 			<a href="#contact" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Contact</a>
 		</div>
@@ -38,10 +48,11 @@
 	<!-- Opened Nav in Mobile, you can use javascript/jQuery -->
 	<div id="nav-opened" class="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10">
 		<div class="p-2 flex flex-col">
-      <a href="#" class="p-2 font-semibold hover:text-indigo-700">Home</a>
-			<a href="#journalism" class="p-2 font-semibold hover:text-indigo-700">Journalism</a>
-			<a href="#media" class="p-2 font-semibold hover:text-indigo-700">Media</a>
-			<a href="#contact" class="p-2 font-semibold hover:text-indigo-700">Contact</a>
+      <a href="#" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Home</a>
+			<a href="#about" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">About</a>
+      <a href="#journalism" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Journalism</a>
+			<a href="#media" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Media</a>
+			<a href="#contact" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Contact</a>
 		</div>
 	</div>
 
@@ -52,11 +63,10 @@
   </style>
 
   <script>
-      let hamburger = document.getElementById('nav-open');
       let mobileMenu = document.getElementById('nav-opened');
-      hamburger.addEventListener('click', function(){
-          mobileMenu.classList.toggle('active');
-      });
+      function toggler(){ mobileMenu.classList.toggle('active'); };
+      let hamburger = document.getElementById('nav-open');
+      hamburger.addEventListener('click', toggler);
   </script>
 
 	<header id="up" class="h-screen">
@@ -78,6 +88,7 @@
   </header>
 
   <!-- About -->
+  <section id="about">
   <div class="py-20">
     <div class="py-8 px-8 sm:w-full md:w-4/5 lg:w-1/2 xl:w-1/2 mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
       <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="images/LayalLiverpool3_crop.jpg" alt="Woman's Face">
@@ -99,9 +110,10 @@
       </div>
     </div>
   </div>
+  </section>
 
   <!-- Articles -->
-  <section id="journalism"class="container mx-auto px-6 p-10">
+  <section id="journalism" class="container mx-auto px-6 p-10">
   <h2 class="text-5xl font-bold text-center text-gray-800 mb-8">
     Selected articles
   </h2>
@@ -110,65 +122,65 @@
     <a class="text-decoration: underline" href=https://www.newscientist.com/author/layal-liverpool/>New Scientist</a>
     author page.
   </h3>
-  </section>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-    	<div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-        <a href="https://www.newscientist.com/article/mg24933180-800-genomic-medicine-is-deeply-biased-towards-white-people">
-    		<img src="https://images.newscientist.com/wp-content/uploads/2021/01/20134934/missing-sequences_helix.jpg">
-        </a>
-        <div class="text-center m-1 px-3 py-2 text-gray-500">Genomic medicine is deeply biased towards white people</div>
-    		<div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
-    	</div>
-      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-        <a href="https://www.newscientist.com/article/2266017-nhs-england-criticised-over-missing-ethnicity-data-for-covid-19-jabs">
-        <img src="https://images.newscientist.com/wp-content/uploads/2021/01/27135840/27-jan_missing-vaccine.jpg">
-        </a>
-        <div class="text-center m-1 px-3 py-2 text-gray-500">NHS England criticised over missing ethnicity data for covid-19 jabs</div>
-        <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
-      </div>
-      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-        <a href="https://www.newscientist.com/article/2237259-why-dont-children-seem-to-get-very-ill-from-the-coronavirus">
-        <img src="https://images.newscientist.com/wp-content/uploads/2020/03/12144831/f39kgx_web.jpg">
-        </a>
-        <div class="text-center m-1 px-3 py-2 text-gray-500">Why don't children seem to get very ill from the coronavirus?</div>
-        <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
-      </div>
-      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-        <a href="https://www.wired.co.uk/article/bame-communities-coronavirus-uk">
-        <img src="https://wi-images.condecdn.net/image/9ZX8mMVE5AM/crop/1440/landscape/f/wired-bame-coronavirus.jpg">
-        </a>
-        <div class="text-center m-1 px-3 py-2 text-gray-500">Why coronavirus hit people from BAME communities so hard</div>
-        <div class="text-center font-bold text-xl m-1 px-2 py-2">Wired</div>
-      </div>
-      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-        <a href="https://www.newscientist.com/article/2258845-covid-19-is-germany-losing-the-fight-against-the-second-wave">
-        <img src="https://images.newscientist.com/wp-content/uploads/2020/11/03165805/shutterstock_editorial_10991612b_web.jpg">
-        </a>
-        <div class="text-center m-1 px-3 py-2 text-gray-500">Covid-19: Is Germany losing the fight against the second wave?</div>
-        <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
-      </div>
-      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-        <a href="https://www.newscientist.com/article/2265004-we-must-start-publishing-ethnicity-data-for-covid-19-vaccinations">
-        <img src="https://images.newscientist.com/wp-content/uploads/2021/01/15171952/final-web.png">
-        </a>
-        <div class="text-center m-1 px-3 py-2 text-gray-500">We must start publishing ethnicity data for covid-19 vaccinations</div>
-        <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
-      </div>
-      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-        <a href="https://www.theguardian.com/science/blog/2018/sep/13/could-cold-water-swimming-help-treat-depression">
-        <img src="https://i.guim.co.uk/img/media/7021145c180827e76e4fa3a5142c1a57ee011ddf/0_170_5115_3069/master/5115.jpg?width=620&quality=85&auto=format&fit=max&s=f81a4e763c65b05b067c0c5811e764ea">
-        </a>
-        <div class="text-center m-1 px-3 py-2 text-gray-500"><br/>Could cold water swimming help treat depression?</div>
-        <div class="text-center font-bold text-xl m-1 px-2 py-2">Guardian</div>
-      </div>
-      <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-        <a href="https://www.newscientist.com/article/mg24833093-900-systemic-racism-what-research-reveals-about-the-extent-of-its-impact">
-        <img src="https://images.newscientist.com/wp-content/uploads/2020/11/18172456/systemicracismart.jpg">
-        </a>
-        <div class="text-center m-1 px-3 py-2 text-gray-500">Systemic racism: What research reveals about the extent of its impact </div>
-        <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
-      </div>
+  <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+  	<div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+      <a href="https://www.newscientist.com/article/mg24933180-800-genomic-medicine-is-deeply-biased-towards-white-people" target="_blank">
+  		<img src="https://images.newscientist.com/wp-content/uploads/2021/01/20134934/missing-sequences_helix.jpg">
+      </a>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Genomic medicine is deeply biased towards white people</div>
+  		<div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+  	</div>
+    <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+      <a href="https://www.newscientist.com/article/2237259-why-dont-children-seem-to-get-very-ill-from-the-coronavirus" target="_blank">
+      <img src="https://images.newscientist.com/wp-content/uploads/2020/03/12144831/f39kgx_web.jpg">
+      </a>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Why don't children seem to get very ill from the coronavirus?</div>
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
     </div>
+    <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+      <a href="https://www.newscientist.com/article/2271847-ebola-may-persist-in-the-body-for-years-before-sparking-new-outbreaks" target="_blank">
+      <img src="https://images.newscientist.com/wp-content/uploads/2021/03/18132619/18-march_ebola.jpg">
+      </a>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Ebola may persist in the body for years before sparking new outbreaks</div>
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+    </div>
+    <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+      <a href="https://www.wired.co.uk/article/bame-communities-coronavirus-uk" target="_blank">
+      <img src="https://wi-images.condecdn.net/image/9ZX8mMVE5AM/crop/1440/landscape/f/wired-bame-coronavirus.jpg">
+      </a>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Why coronavirus hit people from BAME communities so hard</div>
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">Wired</div>
+    </div>
+    <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+      <a href="https://www.newscientist.com/article/2265004-we-must-start-publishing-ethnicity-data-for-covid-19-vaccinations" target="_blank">
+      <img src="https://images.newscientist.com/wp-content/uploads/2021/01/15171952/final-web.png">
+      </a>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">We must start publishing ethnicity data for covid-19 vaccinations</div>
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+    </div>
+    <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+      <a href="https://www.newscientist.com/article/2272162-europeans-get-cold-feet-over-covid-19-vaccines-as-third-wave-hits"  target="_blank">
+      <img src="https://images.newscientist.com/wp-content/uploads/2021/03/23143235/rtxae5ic_web.jpg">
+      </a>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Europeans get cold feet over covid-19 vaccines as third wave hits</div>
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+    </div>
+    <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+      <a href="https://www.theguardian.com/science/blog/2018/sep/13/could-cold-water-swimming-help-treat-depression" target="_blank">
+      <img src="https://i.guim.co.uk/img/media/7021145c180827e76e4fa3a5142c1a57ee011ddf/0_170_5115_3069/master/5115.jpg?width=620&quality=85&auto=format&fit=max&s=f81a4e763c65b05b067c0c5811e764ea">
+      </a>
+      <div class="text-center m-1 px-3 py-2 text-gray-500"><br/>Could cold water swimming help treat depression?</div>
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">Guardian</div>
+    </div>
+    <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+      <a href="https://www.newscientist.com/article/mg24833093-900-systemic-racism-what-research-reveals-about-the-extent-of-its-impact" target="_blank">
+      <img src="https://images.newscientist.com/wp-content/uploads/2020/11/18172456/systemicracismart.jpg">
+      </a>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Systemic racism: What research reveals about the extent of its impact </div>
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+    </div>
+    </div>
+    </section>
 
     <!-- Media -->
     <div class="py-10"></div>
@@ -181,7 +193,29 @@
     	<div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
         <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
         <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://www.newscientist.com/podcasts/51-covid-evolution-new-dinosaur-missing-genome-data>#51: Covid evolution; new dinosaur; missing genome data - 22 January 2021</a>
+          <a href="https://www.newscientist.com/podcasts/60-new-physics-anti-ageing-human-embryos-mars-update" target="_blank">
+            #60: New physics; anti-ageing human embryos; Mars update - 25 March 2021
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+    	<div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
+        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
+        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
+          <a href="https://www.newscientist.com/podcasts/51-covid-evolution-new-dinosaur-missing-genome-data" target="_blank">
+            #51: Covid evolution; new dinosaur; missing genome data - 22 January 2021
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
+        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
+        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline">
+          <a href="https://www.newscientist.com/podcasts/48-must-know-science-of-2021" target="_blank">
+            #48: Must-know science of 2021 - 1 January 2021
+          </a>
         </div>
       </div>
     </div>
@@ -189,15 +223,9 @@
       <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
         <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
         <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://www.newscientist.com/podcasts/48-must-know-science-of-2021/>#48: Must-know science of 2021 - 1 January 2021</a>
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://www.newscientist.com/podcasts/47-christmas-special-quiz-of-the-year/>#47: Christmas special quiz of the year - 18 December 2020</a>
+          <a href="https://www.newscientist.com/podcasts/47-christmas-special-quiz-of-the-year" target="_blank">
+            #47: Christmas special quiz of the year - 18 December 2020
+          </a>
         </div>
       </div>
     </div>
@@ -205,7 +233,19 @@
       <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
         <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">#BlackInImmunoCareers</div>
         <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://www.youtube.com/watch?v=wu3EJHCqZeg&ab_channel=BlackInImmuno>Black In Immuno Week 2020 Career Panel - 24 November 2020</a>
+          <a href="https://www.youtube.com/watch?v=wu3EJHCqZeg&ab_channel=BlackInImmuno" target="_blank">
+            Black In Immuno Week 2020 Career Panel - 24 November 2020
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
+        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
+        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline">
+          <a href="https://www.newscientist.com/podcasts/43-how-the-covid-rna-vaccine-works-systemic-racism-origin-of-humans" target="_blank">
+            #43: How the covid RNA vaccine works; systemic racism; origin of humans - 19 November 2020
+          </a>
         </div>
       </div>
     </div>
@@ -213,15 +253,9 @@
       <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
         <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
         <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://www.newscientist.com/podcasts/43-how-the-covid-rna-vaccine-works-systemic-racism-origin-of-humans/>#43: How the covid RNA vaccine works; systemic racism; origin of humans - 19 November 2020</a>
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://www.newscientist.com/podcasts/40-halloween-special-real-life-vampires-the-science-of-ghosts-deep-sea-zombies-monster-black-holes>#40: Halloween special: real-life vampires, the science of ghosts, deep-sea zombies, monster black holes - 29 October 2020</a>
+          <a href="https://www.newscientist.com/podcasts/40-halloween-special-real-life-vampires-the-science-of-ghosts-deep-sea-zombies-monster-black-holes" target="_blank">
+            #40: Halloween special: real-life vampires, the science of ghosts, deep-sea zombies, monster black holes - 29 October 2020
+          </a>
         </div>
       </div>
     </div>
@@ -229,7 +263,9 @@
       <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
         <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">talkRADIO</div>
         <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://talkradio.co.uk/radio/listen-again/1598724000?fbclid=IwAR3CeSicHQrCXGhf-v_dbxVyAM-hhLjbLTCb3SITRYF2kcLmAfTVZhCmPHs#>Badass Women's Hour - 29 August 2020</a>
+          <a href="https://talkradio.co.uk/radio/listen-again/1598724000?fbclid=IwAR3CeSicHQrCXGhf-v_dbxVyAM-hhLjbLTCb3SITRYF2kcLmAfTVZhCmPHs" target="_blank">
+            Badass Women's Hour - 29 August 2020
+          </a>
         </div>
       </div>
     </div>
@@ -245,7 +281,9 @@
       <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
         <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
         <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://www.buzzsprout.com/814035/4225244-21-how-to-prevent-future-pandemics-black-lives-matter-and-racism-in-science-suspended-animation>#21: How to prevent future pandemics, black lives matter and racism in science, suspended animation - 19 June 2020</a>
+          <a href="https://www.buzzsprout.com/814035/4225244-21-how-to-prevent-future-pandemics-black-lives-matter-and-racism-in-science-suspended-animation" target="_blank">
+            #21: How to prevent future pandemics, black lives matter and racism in science, suspended animation - 19 June 2020
+          </a>
         </div>
       </div>
     </div>
@@ -253,7 +291,9 @@
       <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
         <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">Ask Me, I'm a Scientist!</div>
         <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://www.youtube.com/watch?v=T4R4IR2XFFg&ab_channel=SusannaLHarris>Can I become a science journalist? ~ Ask Me, I'm a Scientist w/Dr. Layal Liverpool - 8 June 2020</a>
+          <a href="https://www.youtube.com/watch?v=T4R4IR2XFFg&ab_channel=SusannaLHarris" target="_blank">
+            Can I become a science journalist? ~ Ask Me, I'm a Scientist w/Dr. Layal Liverpool - 8 June 2020
+          </a>
         </div>
       </div>
     </div>
@@ -261,7 +301,9 @@
       <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
         <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">Vice - VENT Weekly</div>
         <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://play.acast.com/s/ventweekly/-24bonus-covid-19factcheckers-2>#24 Bonus Covid-19 Fact Checkers #2 - 12 May 2020</a>
+          <a href="https://play.acast.com/s/ventweekly/-24bonus-covid-19factcheckers-2" target="_blank">
+            #24 Bonus Covid-19 Fact Checkers #2 - 12 May 2020
+          </a>
         </div>
       </div>
     </div>
@@ -277,7 +319,9 @@
       <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
         <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">BBC Radio 4</div>
         <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href=https://www.bbc.co.uk/sounds/play/m000fgjm>Feedback - 21 February 2020</a>
+          <a href="https://www.bbc.co.uk/sounds/play/m000fgjm" target="_blank">
+            Feedback - 21 February 2020
+          </a>
         </div>
       </div>
     </div>
