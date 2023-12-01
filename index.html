@@ -29,6 +29,7 @@
 		<div class="p-4 hidden md:flex flex-row justify-between font-bold">
 			<a id="hide-after-click" href="#" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Home</a>
 			<a href="#about" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">About</a>
+      <a href="#book" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Book</a>
       <a href="#journalism" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Journalism</a>
       <a href="#media" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Media</a>
 			<a href="#contact" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Contact</a>
@@ -50,6 +51,7 @@
 		<div class="p-2 flex flex-col">
       <a href="#" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Home</a>
 			<a href="#about" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">About</a>
+      <a href="#book" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Book</a>
       <a href="#journalism" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Journalism</a>
 			<a href="#media" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Media</a>
 			<a href="#contact" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Contact</a>
@@ -89,24 +91,29 @@
 
   <!-- About -->
   <section id="about">
-  <div class="py-20">
-    <div class="py-8 px-8 sm:w-full md:w-4/5 lg:w-1/2 xl:w-1/2 mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+  <div class="py-10">
+    <h2 class="text-5xl font-bold text-center text-gray-800 my-8">
+      About Layal
+    </h2>
+    <div class="p-8 sm:w-4/5 md:w-4/5 lg:w-1/2 xl:w-1/2 mx-auto bg-white rounded-xl shadow-lg sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
       <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="images/LayalLiverpool3_crop.jpg" alt="Layal Liverpool">
       <div class="text-center space-y-2 sm:text-left">
         <div class="space-y-0.5">
-          <h2 class="text-lg text-black font-semibold text-center">
-            About Layal
-          </h2>
-          <p class="text-gray-500 font-medium">
-            Layal Liverpool is a science journalist and prospective author based in Berlin, Germany. She is currently a <a class="underline" href="https://www.nature.com/nature/editors">locum reporter at Nature</a> where she reports on the scientific community, including bias and inequality in science, in addition to covering European policy and climate change.<br><br>
+          <p class="text-gray-600 font-medium">
+            Layal Liverpool is a science journalist and author based in Berlin, Germany. Her upcoming book 
+            <a class="italic underline" href="#book">Systemic</a>, about the health harms of racism, will be published in June 2024.
+            <br><br>
 
-            Layal's journalism has spanned diverse science topics, including technology, physics, the environment and health, with a particular focus on inequalities in science, health and medicine. Her writing has appeared in
-            <a class="italic underline" href="https://www.nature.com/search?author=%22Layal%20Liverpool%22">Nature</a>,
+            Layal's journalism has spanned diverse science topics, including technology, physics, the environment and health, 
+            with a particular focus on inequalities in science, health and medicine. Her writing has appeared in
+            <a class="italic underline" href="https://www.nature.com/search?author=Layal+Liverpool">Nature</a>,
             <a class="italic underline" href="https://www.newscientist.com/author/layal-liverpool">New Scientist</a>,
             <a class="italic underline" href="https://www.wired.co.uk/profile/layal-liverpool">WIRED</a>,
-           the <a class="italic underline" href="https://www.theguardian.com/profile/layal-liverpool">Guardian</a> and elsewhere, and her first book (expected in 2024) will investigate the health harms of racism in society, science and medicine.
+            the <a class="italic underline" href="https://www.theguardian.com/profile/layal-liverpool">Guardian</a>, 
+            and elsewhere, and she has worked on staff as a reporter for both <i>Nature</i> and <i>New Scientist</i>.
             <br><br>
-            Before moving into journalism, Layal worked as a biomedical researcher at University College London and the University of Oxford in the UK. She has a PhD in virology and immunology from the University of Oxford. Her PhD research investigated how invading viruses are detected by the immune system.
+            Before moving into journalism, Layal worked as a biomedical researcher at University College London and 
+            the University of Oxford in the UK. She has a PhD in virology and immunology from the University of Oxford.
           </p>
         </div>
       </div>
@@ -114,12 +121,40 @@
   </div>
   </section>
 
+  <!-- Book -->
+  <section id="book">
+    <h2 class="text-5xl font-bold text-center text-gray-800 my-8">
+      Book
+    </h2>
+    <div class="p-8 sm:w-4/5 md:w-4/5 lg:w-1/2 xl:w-1/2 mx-auto bg-white rounded-xl shadow-lg sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+      <div class="text-center sm:text-left">
+        <div class="space-y-0.5">
+          <p class="text-gray-600 font-medium">
+            Layal’s upcoming book <i>Systemic</i> is an investigation of the shocking and insidious ways in which racism harms 
+            health – and an exploration of how we can tackle the problem to create a fairer and healthier world. It is out 6 June 2024 
+            in the UK and 18 June 2024 in the US.
+            <br>
+            <p class="text-center">
+            <br><a class="italic underline" href="https://amzn.eu/d/aQiV6Js">Systemic: How Racism is Making Us Ill</a> 
+            (Bloomsbury Publishing, UK)
+            <a href="https://amzn.eu/d/aQiV6Js"><img class="flex-none h-auto max-h-96 p-1 m-auto" src="images/SystemicUK.jpg" alt="Systemic UK">
+            <br><a class="italic underline" href="https://a.co/d/fyDbHHx">Systemic: How Racism is Making Us Sick</a> 
+            (Astra House Publishing, US)
+            <a href="https://a.co/d/fyDbHHx"><img class="flex-none h-auto max-h-96 p-1 m-auto" src="images/SystemicUS.jpg" alt="Systemic US"></a>
+            </p>
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+
   <!-- Articles -->
   <section id="journalism" class="container mx-auto px-6 p-10">
-  <h2 class="text-5xl font-bold text-center text-gray-800 mb-8">
+  <div class="py-10">
+  <h2 class="text-5xl font-bold text-center text-gray-800 my-8">
     Selected articles
   </h2>
-  <h3 class="text-xl text-center text-gray-800 mb-8">
+  <h3 class="text-xl text-center text-gray-800 mb-4 w-4/5 mx-auto">
     Based on her writing, Layal was shortlisted for a
     <a class="underline" href="https://pressgazette.co.uk/best-journalism-of-2021-revealed-british-journalism-awards-shortlists/">2021 British Journalism Award</a>,
     three Medical Journalists' Association Awards in
@@ -159,17 +194,17 @@
       <div class="text-center font-bold text-xl m-1 px-2 py-2">WIRED</div>
     </div>
     <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-      <a href="https://www.nature.com/articles/d41586-021-02549-9" target="_blank">
-      <img src="https://media.nature.com/lw1024/magazine-assets/d41586-021-02549-9/d41586-021-02549-9_19671918.jpg" alt="">
+      <a href="https://www.nature.com/articles/d41586-023-03129-9" target="_blank">
+      <img src="https://media.nature.com/lw1024/magazine-assets/d41586-023-03129-9/d41586-023-03129-9_26146732.jpg" alt="">
       </a>
-      <div class="text-center m-1 px-3 py-2 text-gray-500">Researchers from global south under-represented in development research</div>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">‘Abortion tests’ developed in Poland spark concern</div>
       <div class="text-center font-bold text-xl m-1 px-2 py-2">Nature</div>
     </div>
-  <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-      <a href="https://www.nature.com/articles/d41586-021-02549-9" target="_blank">
-      <img src="https://media.nature.com/lw767/magazine-assets/d41586-023-00913-5/d41586-023-00913-5_25062734.jpg" alt="">
+    <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+      <a href="https://www.nature.com/articles/d41586-023-02633-2" target="_blank">
+      <img src="https://media.nature.com/lw767/magazine-assets/d41586-023-02633-2/d41586-023-02633-2_25958368.jpg" alt="">
       </a>
-      <div class="text-center m-1 px-3 py-2 text-gray-500">Researchers in Germany protest proposed postdoc rule change</div>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">These veteran female activists are fighting a pivotal climate case with science</div>
       <div class="text-center font-bold text-xl m-1 px-2 py-2">Nature</div>
     </div>
     <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
@@ -180,25 +215,25 @@
       <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
     </div>
     <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-      <a href="https://www.newscientist.com/article/2258845-covid-19-is-germany-losing-the-fight-against-the-second-wave/"  target="_blank">
-      <img src="https://images.newscientist.com/wp-content/uploads/2020/11/03165805/shutterstock_editorial_10991612b_web.jpg" alt="">
+      <a href="https://www.nature.com/articles/d41586-023-02764-6"  target="_blank">
+      <img src="https://media.nature.com/w1248/magazine-assets/d41586-023-02764-6/d41586-023-02764-6_26001996.jpg" alt="">
       </a>
-      <div class="text-center m-1 px-3 py-2 text-gray-500">Covid-19: Is Germany losing the fight against the second wave?</div>
-      <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
-    </div>
-    <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-      <a href="https://www.nature.com/articles/d41586-023-01558-0" target="_blank">
-      <img src="https://media.nature.com/lw767/magazine-assets/d41586-023-01558-0/d41586-023-01558-0_25322068.jpg" alt="">
-      </a>
-      <div class="text-center m-1 px-3 py-2 text-gray-500">What Russia's continued participation in the ISS means for science</div>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Russia’s war in Ukraine is disrupting Antarctic science</div>
       <div class="text-center font-bold text-xl m-1 px-2 py-2">Nature</div>
     </div>
     <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
-      <a href="https://www.newscientist.com/article/2277074-the-eu-may-make-recycling-e-waste-a-legal-requirement-will-it-work/"  target="_blank">
-      <img src="https://images.newscientist.com/wp-content/uploads/2021/05/10123431/10-may_e-waste.jpg" alt="">
+      <a href="https://www.nature.com/articles/d41586-021-02549-9" target="_blank">
+      <img src="https://media.nature.com/lw1024/magazine-assets/d41586-021-02549-9/d41586-021-02549-9_19671918.jpg" alt="">
       </a>
-      <div class="text-center m-1 px-3 py-2 text-gray-500">The EU may make recycling e-waste a legal requirement – will it work?</div>
-      <div class="text-center font-bold text-xl m-1 px-2 py-2">New Scientist</div>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Researchers from global south under-represented in development research</div>
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">Nature</div>
+    </div>
+    <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
+      <a href="https://www.nature.com/articles/d41586-023-01581-1"  target="_blank">
+      <img src="https://media.nature.com/lw1024/magazine-assets/d41586-023-01581-1/d41586-023-01581-1_25345608.jpg" alt="">
+      </a>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">‘The disease will be neglected’: scientists react to the WHO ending mpox emergency</div>
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">Nature</div>
     </div>
     <div class="sm:w-full md:w-full lg:w-1/5 xl:w-1/5 m-3 rounded shadow-lg overflow-hidden">
       <a href="https://www.newscientist.com/article/2271847-ebola-may-persist-in-the-body-for-years-before-sparking-new-outbreaks/"  target="_blank">
@@ -215,213 +250,227 @@
       <div class="text-center font-bold text-xl m-1 px-2 py-2">Guardian</div>
   </div>
   </div>
+  </div>
   </section>
 
     <!-- Media -->
-    <div class="py-10"></div>
     <section id="media" class="container mx-auto px-6 p-10">
-    <h2 class="text-5xl font-bold text-center text-gray-800 mb-8">
+    <h2 class="text-5xl font-bold text-center text-gray-800 my-8">
       Media appearances
     </h2>
-    <h3 class="text-xl text-center text-gray-800 mb-8">
+    <h3 class="text-xl text-center text-gray-800 mb-4 w-4/5 mx-auto">
       Layal has spoken about science and her journalism on BBC Radio 4, BBC Radio Scotland, BBC Radio Kent and talkRADIO, as well as on VICE and New Scientist podcasts. She has also frequently appeared on discussion panels and given talks about her work, including at schools and universities, as well as at scientific and other professional conferences.
     </h3>
+
     <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-    	<div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">Berlin Metropolitan School</div>
-        <div class="text-center text-xl m-1 px-3 py-2" >
-          Talk about racism and biases in science and medicine - 9 February 2023
+      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden p-10">
+      <dl class="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+        <div class="flex flex-col py-3">
+            <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+              Berlin Metropolitan School
+            </dt>
+            <dd class="text-lg">
+              Talk about racism and biases in science and medicine - 9 February 2023
+            </dd>
         </div>
+        <div class="flex flex-col py-3">
+            <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+              Mill Hill County High School, London
+            </dt>
+            <dd class="text-lg">
+              Black History Month talk about careers in science and journalism - 14 October 2022
+            </dd>
         </div>
-      </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-    	<div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">Mill Hill County High School, London</div>
-        <div class="text-center text-xl m-1 px-3 py-2" >
-        Black History Month talk about careers in science and journalism - 14 October 2022
+        <div class="flex flex-col py-3">
+            <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+              NeuWrite Science Journalism Panel
+            </dt>
+            <dd class="text-lg">
+              <a class="underline" href="https://www.youtube.com/watch?v=ZbS5dx2DWqQ" target="_blank">
+                ScienceWrite Journalism Panel - 16 November 2021
+              </a>
+            </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-    	<div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">NeuWrite Science Journalism Panel</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.youtube.com/watch?v=ZbS5dx2DWqQ" target="_blank">
-            ScienceWrite Journalism Panel - 16 November 2021
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            New Scientist Weekly
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.newscientist.com/podcasts/76-harm-of-race-based-medicine-space-tourism-industry-is-go-america-s-heatwave-challenges/" target="_blank">
+              #76 Harm of race-based medicine; space tourism industry is go; America's heatwave challenges - 15 July 2021
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-    	<div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.newscientist.com/podcasts/76-harm-of-race-based-medicine-space-tourism-industry-is-go-america-s-heatwave-challenges/" target="_blank">
-            #76 Harm of race-based medicine; space tourism industry is go; America's heatwave challenges - 15 July 2021
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            New Scientist Weekly
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.newscientist.com/podcasts/62-synthetic-life-rescue-plan-for-earth-muon-g-2-new-physics" target="_blank">
+              #62 Synthetic life; rescue plan for Earth; muon g-2 new physics - 8 April 2021
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-    	<div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.newscientist.com/podcasts/62-synthetic-life-rescue-plan-for-earth-muon-g-2-new-physics" target="_blank">
-            #62 Synthetic life; rescue plan for Earth; muon g-2 new physics - 8 April 2021
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            New Scientist Weekly
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.newscientist.com/podcasts/60-new-physics-anti-ageing-human-embryos-mars-update" target="_blank">
+              #60: New physics; anti-ageing human embryos; Mars update - 25 March 2021
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.newscientist.com/podcasts/60-new-physics-anti-ageing-human-embryos-mars-update" target="_blank">
-            #60: New physics; anti-ageing human embryos; Mars update - 25 March 2021
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            New Scientist Weekly
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.newscientist.com/podcasts/51-covid-evolution-new-dinosaur-missing-genome-data" target="_blank">
+              #51: Covid evolution; new dinosaur; missing genome data - 22 January 2021
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-    	<div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.newscientist.com/podcasts/51-covid-evolution-new-dinosaur-missing-genome-data" target="_blank">
-            #51: Covid evolution; new dinosaur; missing genome data - 22 January 2021
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            New Scientist Weekly
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.newscientist.com/podcasts/48-must-know-science-of-2021" target="_blank">
+              #48: Must-know science of 2021 - 1 January 2021
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline">
-          <a href="https://www.newscientist.com/podcasts/48-must-know-science-of-2021" target="_blank">
-            #48: Must-know science of 2021 - 1 January 2021
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            New Scientist Weekly
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.newscientist.com/podcasts/47-christmas-special-quiz-of-the-year" target="_blank">
+              #47: Christmas special quiz of the year - 18 December 2020
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.newscientist.com/podcasts/47-christmas-special-quiz-of-the-year" target="_blank">
-            #47: Christmas special quiz of the year - 18 December 2020
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            #BlackInImmunoCareers
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.youtube.com/watch?v=wu3EJHCqZeg&ab_channel=BlackInImmuno" target="_blank">
+              Black In Immuno Week 2020 Career Panel - 24 November 2020
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">#BlackInImmunoCareers</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.youtube.com/watch?v=wu3EJHCqZeg&ab_channel=BlackInImmuno" target="_blank">
-            Black In Immuno Week 2020 Career Panel - 24 November 2020
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            New Scientist Weekly
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.newscientist.com/podcasts/43-how-the-covid-rna-vaccine-works-systemic-racism-origin-of-humans" target="_blank">
+              #43: How the covid RNA vaccine works; systemic racism; origin of humans - 19 November 2020
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline">
-          <a href="https://www.newscientist.com/podcasts/43-how-the-covid-rna-vaccine-works-systemic-racism-origin-of-humans" target="_blank">
-            #43: How the covid RNA vaccine works; systemic racism; origin of humans - 19 November 2020
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            New Scientist Weekly
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.newscientist.com/podcasts/40-halloween-special-real-life-vampires-the-science-of-ghosts-deep-sea-zombies-monster-black-holes" target="_blank">
+              #40: Halloween special: real-life vampires, the science of ghosts, deep-sea zombies, monster black holes - 29 October 2020
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.newscientist.com/podcasts/40-halloween-special-real-life-vampires-the-science-of-ghosts-deep-sea-zombies-monster-black-holes" target="_blank">
-            #40: Halloween special: real-life vampires, the science of ghosts, deep-sea zombies, monster black holes - 29 October 2020
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            talkRADIO
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://talkradio.co.uk/radio/listen-again/1598724000?fbclid=IwAR3CeSicHQrCXGhf-v_dbxVyAM-hhLjbLTCb3SITRYF2kcLmAfTVZhCmPHs" target="_blank">
+              Badass Women's Hour - 29 August 2020
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">talkRADIO</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://talkradio.co.uk/radio/listen-again/1598724000?fbclid=IwAR3CeSicHQrCXGhf-v_dbxVyAM-hhLjbLTCb3SITRYF2kcLmAfTVZhCmPHs" target="_blank">
-            Badass Women's Hour - 29 August 2020
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            BBC Radio Kent
+          </dt>
+          <dd class="text-lg">
+            Breakfast on BBC Radio Kent (broadcast live) - 29 July 2020
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">BBC Radio Kent</div>
-        <div class="text-center text-xl m-1 px-3 py-2" >
-          Breakfast on BBC Radio Kent (broadcast live) - 29 July 2020
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            New Scientist Weekly
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.buzzsprout.com/814035/4225244-21-how-to-prevent-future-pandemics-black-lives-matter-and-racism-in-science-suspended-animation" target="_blank">
+              #21: How to prevent future pandemics, black lives matter and racism in science, suspended animation - 19 June 2020
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">New Scientist Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.buzzsprout.com/814035/4225244-21-how-to-prevent-future-pandemics-black-lives-matter-and-racism-in-science-suspended-animation" target="_blank">
-            #21: How to prevent future pandemics, black lives matter and racism in science, suspended animation - 19 June 2020
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            Ask Me, I'm a Scientist!
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.youtube.com/watch?v=T4R4IR2XFFg&ab_channel=SusannaLHarris" target="_blank">
+              Can I become a science journalist? ~ Ask Me, I'm a Scientist w/Dr. Layal Liverpool - 8 June 2020
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">Ask Me, I'm a Scientist!</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.youtube.com/watch?v=T4R4IR2XFFg&ab_channel=SusannaLHarris" target="_blank">
-            Can I become a science journalist? ~ Ask Me, I'm a Scientist w/Dr. Layal Liverpool - 8 June 2020
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            VICE - VENT Weekly
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://play.acast.com/s/ventweekly/-24bonus-covid-19factcheckers-2" target="_blank">
+              #24 Bonus Covid-19 Fact Checkers #2 - 12 May 2020
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">VICE - VENT Weekly</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://play.acast.com/s/ventweekly/-24bonus-covid-19factcheckers-2" target="_blank">
-            #24 Bonus Covid-19 Fact Checkers #2 - 12 May 2020
-          </a>
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            BBC Radio Scotland
+          </dt>
+          <dd class="text-lg">
+            Good Morning Scotland (broadcast live) - 9 May 2020
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">BBC Radio Scotland</div>
-        <div class="text-center text-xl m-1 px-3 py-2" >
-          Good Morning Scotland (broadcast live) - 9 May 2020
+        <div class="flex flex-col py-3">
+          <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
+            BBC Radio 4
+          </dt>
+          <dd class="text-lg">
+            <a class="underline" href="https://www.bbc.co.uk/sounds/play/m000fgjm" target="_blank">
+              Feedback - 21 February 2020
+            </a>
+          </dd>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
-      <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden">
-        <div class="text-center text-xl m-1 px-3 py-2 font-medium text-black">BBC Radio 4</div>
-        <div class="text-center text-xl m-1 px-3 py-2 text-decoration: underline" >
-          <a href="https://www.bbc.co.uk/sounds/play/m000fgjm" target="_blank">
-            Feedback - 21 February 2020
-          </a>
-        </div>
+      </dl>
       </div>
     </div>
   </section>
+
     <!-- Contact -->
-    <div class="py-10"></div>
     <section id="contact" class="container mx-auto px-6 p-10">
-    <h2 class="text-5xl font-bold text-center text-gray-800 mb-2">
+    <h2 class="text-5xl font-bold text-center text-gray-800 my-8">
       Contact
     </h2>
 
-    <div class="justify-center py-8 px-8 sm:w-=4/5 md:w-4/5 lg:w-1/2 xl:w-2/5 mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center  sm:space-y-0 sm:space-x-6">
+    <div class="justify-center py-8 px-8 sm:w-4/5 md:w-4/5 lg:w-1/2 xl:w-2/5 mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center  sm:space-y-0 sm:space-x-6">
       <img class="block mx-auto h-32 rounded-full sm:mx-0 sm:flex-shrink-0" src="images/LayalYellow.jpg" alt="Layal Liverpool">
       <div class="text-center space-y-2 sm:text-left">
         <div class="space-y-0.5">
-          <p class="text-center py-2 text-lg text-black font-semibold">
+          <p class="py-2 text-lg text-black font-semibold">
             Dr. Layal Liverpool
+          </p>
+          <p class="text-gray-600 font-medium">
+          Layal is currently on parental leave. For publicity enquiries related to her book Systemic, please contact 
+          Hayley Camis <a class="underline" href="mailto:hayley.camis@bloomsbury.com">hayley.camis@bloomsbury.com</a> (UK) or 
+          Emily Lavelle <a class="underline" href="mailto:Emilylavellecommunications@outlook.com">Emilylavellecommunications@outlook.com</a> (US). 
+          For other book-related enquiries, please contact Layal via her literary agent 
+          Will Francis <a class="underline" href="mailto:wfrancis@janklow.co.uk">wfrancis@janklow.co.uk</a>.
           </p>
         </div>
 
@@ -433,13 +482,12 @@
         <a class="bg-blue-900 hover:bg-opacity-50 flex my-2 items-center justify-center h-12 w-12 mx-1 rounded-full fab fill-current text-white text-xl fa fa-linkedin" href="https://www.linkedin.com/in/layal-liverpool-b01b7367"></a>
         </div>
       </div>
-    </div>
   </section>
 
     <!-- Impressum -->
     <div class="py-20"></div>
     <section id="impressum" class="container mx-auto px-6 p-10">
-    <h2 class="text-xl font-bold text-center text-gray-400 mb-2">
+    <h2 class="text-xl font-bold text-center text-gray-400 mb-4">
       Impressum
     </h2>
 
