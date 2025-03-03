@@ -19,7 +19,7 @@
 
   <style>
     .active{ display: block; }
-    #more_media { display: none; }
+    #more_press { display: none; }
     #more_impressum { display: none; }
   </style>
 
@@ -38,7 +38,7 @@
 			<a href="#about" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">About</a>
       <a href="#book" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Book</a>
       <a href="#journalism" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Journalism</a>
-      <a href="#media" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Media</a>
+      <a href="#press" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Press</a>
 			<a href="#contact" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Contact</a>
 		</div>
 
@@ -60,7 +60,7 @@
 			<a href="#about" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">About</a>
       <a href="#book" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Book</a>
       <a href="#journalism" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Journalism</a>
-			<a href="#media" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Media</a>
+			<a href="#press" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Press</a>
 			<a href="#contact" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Contact</a>
 		</div>
 	</div>
@@ -315,13 +315,13 @@
 
   </section>
 
-    <!-- Media -->
-    <section id="media" class="container mx-auto px-6 p-10">
+    <!-- Press -->
+    <section id="press" class="container mx-auto px-6 p-10">
     <h2 class="text-5xl font-bold text-center text-gray-800 my-8">
       Press & interviews
     </h2>
     <h3 class="text-xl text-center text-gray-800 mb-4 w-4/5 mx-auto">
-      Layal is a recognised expert in biomedical science and health; she has been interviewed by and had her work featured in major international news outlets. She has also appeared on radio, podcasts, TV and social media broadcasts internationally, as well as delivered talks and participated in discussion panels at prominent conferences and festivals.
+      Layal is a recognised expert in biomedical science and health; she has been interviewed by and had her work featured in major international news outlets. She has also appeared on radio, podcasts, TV and social media broadcasts internationally, as well as delivered talks and participated in discussion panels at prominent conferences and festivals. For book-related press enquiries in the UK, please contact Hayley Camis <a class="underline" href="mailto:hayley.camis@bloomsbury.com">hayley.camis@bloomsbury.com</a>. For the US, please contact Emily Lavelle <a class="underline" href="mailto:Emilylavellecommunications@outlook.com">Emilylavellecommunications@outlook.com</a>. 
     </h3>
     <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
       <div class="sm:w-full md:w-full lg:w-4/5 xl:w-4/5 m-3 rounded shadow-lg overflow-hidden p-10">
@@ -419,7 +419,7 @@
           </dd>
           <dd class="text-lg">
             <a class="underline" href="https://www.instagram.com/p/C7fJvDcNeum/" target="_blank">
-              Watch here
+              Watch here (snippet)
             </a>
           </dd>
         </div>
@@ -439,8 +439,8 @@
         </div>
 
         <!-- divider -->
-<div id="dots_media" class="flex flex-col items-center py-3 text-gray-700"><dt></dt><dd>...</dd></div>
-<span id="more_media">
+<div id="press" class="flex flex-col items-center py-3 text-gray-700"><dt></dt><dd>...</dd></div>
+<span id="more_press">
   <!-- Entry 9 -->
   <div class="flex flex-col py-3">
     <dt class="mb-1 text-gray-700 md:text-lg dark:text-gray-400 font-semibold">
@@ -487,7 +487,7 @@
 <div class="flex flex-col items-center">
   <dt></dt>
   <dd>
-    <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" onclick="showMoreMedia()" id="buttonMedia">Read more</button>
+    <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" onclick="showMorePress()" id="buttonPress">Read more</button>
   </dd>
 </div>
 </dl>
@@ -574,10 +574,10 @@ Website imprint from impressum-generator.de (translated from German to English w
   </section>
 
   <script>
-    function showMoreMedia() {
-      var dots = document.getElementById("dots_media");
-      var moreText = document.getElementById("more_media");
-      var btnText = document.getElementById("buttonMedia");
+    function showMorePress() {
+      var dots = document.getElementById("dots_press");
+      var moreText = document.getElementById("more_press");
+      var btnText = document.getElementById("buttonpress");
     
       if (dots.style.display === "none") {
         dots.style.display = "inline";
