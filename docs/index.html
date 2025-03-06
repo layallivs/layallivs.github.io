@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Layal Liverpool Science Journalist and Author of Systemic">
+  <meta name="description"
+    content="Layal Liverpool is a science journalist and the author of Systemic: How Racism Harms Health — and What We Can Do About It. She has a PhD in virology and immunology from the University of Oxford.">
+  <meta property="og:description"
+    content="Layal Liverpool is a science journalist and the author of Systemic: How Racism Harms Health — and What We Can Do About It. She has a PhD in virology and immunology from the University of Oxford.">
+  <meta property="og:image" content="https://layalliverpool.com/images/ogImageLayalLiverpool.jpg">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:title" content="Layal Liverpool Science Journalist and Author of Systemic">
+  <meta property="twitter:description"
+    content="Layal Liverpool is a science journalist and the author of Systemic: How Racism Harms Health — and What We Can Do About It. She has a PhD in virology and immunology from the University of Oxford.">
+  <meta property="twitter:image" content="https://layalliverpool.com/images/ogImageLayalLiverpool.jpg">
+  <meta property="twitter:site" content="https://twitter.com/layallivs">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="tailwind.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://layalliverpool.com/images/favicon.ico">
+  <title>Layal Liverpool</title>
+
+  <style>
+    .active {
+      display: block;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-black bg-opacity-50">
+
+    <div class="p-4">
+      <div class="font-extrabold tracking-widest text-xl"><a href="index.html"
+          class="transition duration-500 hover:text-indigo-500">Layal Liverpool</a></div>
+    </div>
+
+    <!-- Nav Items Working on Tablet & Bigger Sceen -->
+    <div class="p-4 hidden md:flex flex-row justify-between font-bold">
+      <a id="hide-after-click" href="index.html"
+        class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Home</a>
+      <a href="about.html"
+        class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">About</a>
+      <a href="books.html"
+        class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Books</a>
+      <a href="journalism.html"
+        class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Journalism</a>
+      <a href="press.html"
+        class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Press</a>
+      <a href="contact.html"
+        class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Contact</a>
+    </div>
+
+    <!-- Burger Nav Button on Mobile -->
+    <div id="nav-open" class="p-4 md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-menu">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </div>
+  </nav>
+
+  <!-- Opened Nav in Mobile, you can use javascript/jQuery -->
+  <div id="nav-opened" class="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10">
+    <div class="p-2 flex flex-col">
+      <a href="index.html" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Home</a>
+      <a href="about.html" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">About</a>
+      <a href="books.html" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Books</a>
+      <a href="journalism.html" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Journalism</a>
+      <a href="press.html" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Press</a>
+      <a href="contact.html" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Contact</a>
+    </div>
+  </div>
+
+  <script>
+    let mobileMenu = document.getElementById('nav-opened');
+    function toggler() { mobileMenu.classList.toggle('active'); };
+    let hamburger = document.getElementById('nav-open');
+    hamburger.addEventListener('click', toggler);
+  </script>
+
+  <header id="up" class="h-screen">
+    <div class="h-screen bg-layal-hero bg-center bg-cover">
+        <!-- Overlay Background + Center Control -->
+        <div class="h-screen bg-opacity-50 bg-black flex items-center justify-center"
+            style="background:rgba(0,0,0,0.5);">
+            <div class="mx-2 text-center">
+                <div class="py-5">
+                    <h1 class="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl">
+                        <span class="">Layal</span> Liverpool
+                    </h1>
+                </div>
+                <h2 class="text-gray-400 font-extrabold text-3xl xs:text-4xl md:text-5xl leading-tight">
+                    <span class="">Science journalist & author</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white p-4 mt-auto w-full bg-opacity-30">
+    <div class="container mx-auto text-center">
+      &copy; 2025 Layal Liverpool. All rights reserved. 
+    <a href="impressum.html" class="font-semibold hover:text-gray-300">Impressum</a>
+  </footer>
+
+</body>
+
+</html>
