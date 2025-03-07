@@ -37,7 +37,7 @@ def generate_static_subpages():
     
     # List of directories to copy
     dirs_to_copy = [
-        ('src/assets/images', 'images'),
+        ('data/assets/images', 'images'),
     ]
     
     # Copy files

@@ -14,7 +14,7 @@ def generate_press():
     
     for _, row in df.iterrows():
         content += f'''
-        <div class=" m-3 rounded shadow-lg overflow-hidden flex flex-col h-full">
+        <div class="m-3 rounded shadow-lg overflow-hidden flex flex-col h-full h-64">
             <a href="{row['Link']}" target="_blank" class="flex flex-col h-full">
                 <div class="text-center font-bold text-xl m-1 px-2 py-2">
                     {row['Outlet']}
@@ -35,3 +35,5 @@ def generate_press():
     # Write the output file
     with open('docs/press.html', 'w', encoding='utf-8') as file:
         file.write(final_html) 
+
+    print("Press page has been generated.")

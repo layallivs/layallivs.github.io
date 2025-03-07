@@ -33,3 +33,5 @@ def generate_journalism():
     # Write the output file
     with open('docs/journalism.html', 'w', encoding='utf-8') as file:
         file.write(final_html) 
+
+    print("Journalism page has been generated.")
