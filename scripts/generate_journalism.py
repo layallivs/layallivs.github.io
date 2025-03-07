@@ -14,7 +14,7 @@ def generate_journalism():
 
     for _, row in df.iterrows():
         content += f'''
-        <div class="m-3 rounded shadow-lg overflow-hidden flex flex-col">
+        <div class="m-3 rounded shadow-lg overflow-hidden flex flex-col h-full h-64 hover:shadow-2xl transition-shadow duration-300">
             <a href="{row['link']}" target="_blank" class="flex flex-col h-full">
                 <div class="text-center m-1 px-3 py-2 text-gray-600">
                     {row['title']}
@@ -31,7 +31,7 @@ def generate_journalism():
     final_html = template.replace('{{content}}', content)
     
     # Write the output file
-    with open('docs/journalism.html', 'w', encoding='utf-8') as file:
+    with open('docs/content/journalism.html', 'w', encoding='utf-8') as file:
         file.write(final_html) 
 
     print("Journalism page has been generated.")

@@ -14,17 +14,17 @@ def generate_press():
     
     for _, row in df.iterrows():
         content += f'''
-        <div class="m-3 rounded shadow-lg overflow-hidden flex flex-col h-full h-64">
+        <div class="m-3 rounded shadow-lg flex flex-col h-full h-64 hover:shadow-2xl transition-shadow duration-300">
             <a href="{row['Link']}" target="_blank" class="flex flex-col h-full">
-                <div class="text-center font-bold text-xl m-1 px-2 py-2">
-                    {row['Outlet']}
-                </div>
-                <div class="text-center px-2 text-gray-600 flex-grow flex items-center justify-center">
-                    {row['Title']}
-                </div>
-                <div class="text-center m-1 px-2 py-1 text-gray-400">
-                    {row['Date'].strftime('%d %B %Y')}
-                </div>
+            <div class="text-center font-bold text-xl m-1 px-2 py-2">
+                {row['Outlet']}
+            </div>
+            <div class="text-center px-2 text-gray-600">
+                {row['Title']}
+            </div>
+            <div class="text-center m-1 px-2 py-1 text-gray-400">
+                {row['Date'].strftime('%d %B %Y')}
+            </div>
             </a>
         </div>
         '''
@@ -33,7 +33,7 @@ def generate_press():
     final_html = template.replace('{{content}}', content)
     
     # Write the output file
-    with open('docs/press.html', 'w', encoding='utf-8') as file:
+    with open('docs/content/press.html', 'w', encoding='utf-8') as file:
         file.write(final_html) 
 
     print("Press page has been generated.")
