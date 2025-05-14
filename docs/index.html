@@ -120,9 +120,19 @@
                     .then(response => response.text())
                     .then(html => {
                         document.getElementById("content").innerHTML = html;
+                        setTimeout(() => {
+                            window.scrollTo(0, 0); // Scroll window to top
+                            const contentDiv = document.getElementById("content");
+                            if (contentDiv) contentDiv.scrollTop = 0; // Also scroll content div to top
+                        }, 0);
                     })
                     .catch(() => {
                         document.getElementById("content").innerHTML = "<h2>Page not found</h2>";
+                        setTimeout(() => {
+                            window.scrollTo(0, 0);
+                            const contentDiv = document.getElementById("content");
+                            if (contentDiv) contentDiv.scrollTop = 0;
+                        }, 0);
                     });
             }
 
