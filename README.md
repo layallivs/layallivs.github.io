@@ -52,6 +52,7 @@ python3 build.py
 
 3. To preview the website locally:
 ```bash
+cd docs
 python3 -m http.server 8000
 ```
 

@@ -68,12 +68,12 @@
     <!-- Opened Nav in Mobile, you can use javascript/jQuery -->
     <div id="nav-opened" class="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10">
         <div class="p-2 flex flex-col">
-            <a href="#index" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Home</a>
-            <a href="#about" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">About</a>
-            <a href="#books" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Books</a>
-            <a href="#journalism" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Journalism</a>
-            <a href="#press" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Press</a>
-            <a href="#contact" onclick="toggler()" class="showMenu p-2 font-semibold hover:text-indigo-700">Contact</a>
+            <a href="#index" class="showMenu p-2 font-semibold hover:text-indigo-700">Home</a>
+            <a href="#about" class="showMenu p-2 font-semibold hover:text-indigo-700">About</a>
+            <a href="#books" class="showMenu p-2 font-semibold hover:text-indigo-700">Books</a>
+            <a href="#journalism" class="showMenu p-2 font-semibold hover:text-indigo-700">Journalism</a>
+            <a href="#press" class="showMenu p-2 font-semibold hover:text-indigo-700">Press</a>
+            <a href="#contact" class="showMenu p-2 font-semibold hover:text-indigo-700">Contact</a>
         </div>
     </div>
 
@@ -84,15 +84,33 @@
             let mobileMenu = document.getElementById('nav-opened');
             let hamburger = document.getElementById('nav-open');
 
-            function toggler() {
+            // Make toggler globally accessible
+            window.toggler = function () {
                 mobileMenu.classList.toggle('active');
-            }
+            };
 
             if (hamburger) {
-                hamburger.addEventListener('click', toggler);
+                hamburger.addEventListener('click', window.toggler);
             } else {
                 console.error("Element with ID 'nav-open' not found.");
             }
+
+            // Close menu when clicking a menu item
+            const menuLinks = mobileMenu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.remove('active');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function (event) {
+                if (mobileMenu.classList.contains('active')) {
+                    if (!mobileMenu.contains(event.target) && !hamburger.contains(event.target)) {
+                        mobileMenu.classList.remove('active');
+                    }
+                }
+            });
 
             function loadContent() {
                 let page = location.hash.substring(1) || "index"; // Default to index
